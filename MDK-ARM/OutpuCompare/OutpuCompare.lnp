@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"outpucompare\startup_stm32l476xx.o"
+"outpucompare\main.o"
+"outpucompare\stm32l4xx_it.o"
+"outpucompare\stm32l4xx_hal_msp.o"
+"outpucompare\stm32l4xx_hal_tim.o"
+"outpucompare\stm32l4xx_hal_tim_ex.o"
+"outpucompare\stm32l4xx_hal.o"
+"outpucompare\stm32l4xx_hal_i2c.o"
+"outpucompare\stm32l4xx_hal_i2c_ex.o"
+"outpucompare\stm32l4xx_hal_rcc.o"
+"outpucompare\stm32l4xx_hal_rcc_ex.o"
+"outpucompare\stm32l4xx_hal_flash.o"
+"outpucompare\stm32l4xx_hal_flash_ex.o"
+"outpucompare\stm32l4xx_hal_flash_ramfunc.o"
+"outpucompare\stm32l4xx_hal_gpio.o"
+"outpucompare\stm32l4xx_hal_dma.o"
+"outpucompare\stm32l4xx_hal_dma_ex.o"
+"outpucompare\stm32l4xx_hal_pwr.o"
+"outpucompare\stm32l4xx_hal_pwr_ex.o"
+"outpucompare\stm32l4xx_hal_cortex.o"
+"outpucompare\system_stm32l4xx.o"
+--library_type=microlib --strict --scatter "OutpuCompare\OutpuCompare.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OutpuCompare.map" -o OutpuCompare\OutpuCompare.axf
